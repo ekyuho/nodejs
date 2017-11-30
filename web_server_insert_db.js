@@ -18,7 +18,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 var fs = require("fs");
 var df = require('dateformat');
-
+mysql = require('mysql');
+var connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'sensor',
+    password: 'mypassword',
+    database: 'data'
+})
+connection.connect();
 
 function insert_sensor(user, type, value, user2, serial, ip)
 {
@@ -34,8 +41,9 @@ function insert_sensor(user, type, value, user2, serial, ip)
   ret = " "+ type + user2 +"="+ value;
   //console.log("RET "+ ret);
 
-  fs.appendFile("Data.txt", d+'\n', function(err) {
-    if(err) console.log("File Write Err: %j", r);
+  var query = connection.query('insert into sensors set ?', obj, function(err, rows, cols) {
+    if (err) throw err;
+    console.log(ret);
   });
   return(ret);
 }
