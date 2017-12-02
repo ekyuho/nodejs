@@ -16,6 +16,3 @@ GRANT ALL PRIVILEGES ON data.* TO 'sensor'@'localhost';
 FLUSH PRIVILEGES;
 
 SET PASSWORD FOR 'sensor'@'localhost' = PASSWORD('mypassword');
-
-
-npm install mysql
