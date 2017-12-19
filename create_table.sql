@@ -1,5 +1,5 @@
-create database data;
-use data;
+create database mydb;
+use mydb;
 
 create table sensors (
 id int not null auto_increment primary key,
@@ -11,6 +11,6 @@ value decimal(10,4),
 ip char(15),
 time TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
 
-CREATE USER 'sensor'@'localhost' IDENTIFIED BY 'sensor.data';
-GRANT ALL PRIVILEGES ON data.* TO 'sensor'@'localhost';
+CREATE USER 'me'@'localhost' IDENTIFIED BY 'mypassword';
+GRANT ALL PRIVILEGES ON mydb.* TO 'me'@'localhost';
 FLUSH PRIVILEGES;
