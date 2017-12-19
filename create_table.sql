@@ -14,5 +14,3 @@ time TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
 CREATE USER 'sensor'@'localhost' IDENTIFIED BY 'sensor.data';
 GRANT ALL PRIVILEGES ON data.* TO 'sensor'@'localhost';
 FLUSH PRIVILEGES;
-
-SET PASSWORD FOR 'sensor'@'localhost' = PASSWORD('mypassword');
