@@ -1,3 +1,8 @@
+/*
+ * 2017/12/19 Kyuho Kim
+ * GET으로 호출하는 경우.
+ * http://localhost:8080/graph
+ */
 var express = require('express')
 var app = express()
 fs = require('fs');
