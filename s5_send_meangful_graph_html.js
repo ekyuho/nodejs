@@ -1,5 +1,6 @@
 /*
- * 2017/12/19 Kyuho Kim
+ * 2018/3/23 Kyuho Kim
+ * ekyuho@gmail.com
  * GET으로 호출하는 경우.
  * http://localhost:8082/graph
  */
