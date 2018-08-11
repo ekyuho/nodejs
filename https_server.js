@@ -1,6 +1,6 @@
 /* 
  * https server
- * Kyuho Kim (ekyuho@gmai.com)
+ * Kyuho Kim (ekyuho@gmail.com)
  *
  * Create Self-Signed Certificate https://geekflare.com/openssl-commands-certificates/ 
  * openssl req -x509 -sha256 -nodes -newkey rsa:2048 -keyout gfselfsigned.key -out gfcert.pem
