@@ -1,3 +1,9 @@
+/*
+ * 2020/3/23 Kyuho Kim
+ * ekyuho@gmail.com 
+ * Insert to mysql database
+ */
+
 mysql = require('mysql');
 var connection = mysql.createConnection({
     host: 'localhost',
