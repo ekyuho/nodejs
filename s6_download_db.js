@@ -1,5 +1,5 @@
 /*
- * 2018/3/23 Kyuho Kim
+ * 2020/3/23 Kyuho Kim
  * ekyuho@gmail.com
  * GET으로 호출하는 경우.
  * http://localhost:8083/data
