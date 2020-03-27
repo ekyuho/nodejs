@@ -1,9 +1,9 @@
 /*
- * 2018/3/23 Kyuho Kim
+ * 2020/3/23 Kyuho Kim
  * ekyuho@gmail.com 
  * GET으로 호출하는 경우.
  * http://localhost:8080/log?device=202&unit=3&type=T&value=24.2&seq=34
-*/
+ */
 
 var express = require('express');
 var app = express();
