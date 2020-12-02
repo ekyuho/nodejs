@@ -11,6 +11,6 @@ value decimal(10,4),
 ip char(15),
 time TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
 
-CREATE USER 'me'@'localhost' IDENTIFIED BY 'mypassword';
+CREATE USER 'me'@'localhost' IDENTIFIED BY 'mypassword!';
 GRANT ALL PRIVILEGES ON mydb.* TO 'me'@'localhost';
 FLUSH PRIVILEGES;
